@@ -10,3 +10,4 @@ if (value == 5) Console.WriteLine("Пятница");
 if (value == 6) Console.WriteLine("Суббота");
 if (value == 7) Console.WriteLine("Воскресенье");
 if (value >7) Console.WriteLine("В неделе всего 7 дней глупец АХАХАХАх кхм кхм кхм, ох уж этот ковид достал уже");
+// Можно после каждого IF нафигачить else. Else Ставится после точки с запятой. А потом ниже само условие Else прописать.
