@@ -1,5 +1,5 @@
 ﻿Random rnd = new Random();
-int value = rnd.Next(10, 99);
+int value = rnd.Next(10, 100);
 Console.WriteLine(value);
 
 
