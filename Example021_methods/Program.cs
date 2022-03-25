@@ -7,7 +7,7 @@ void Method1()
 
 
 
-// вид2 > Возвращают, но ничего не принимают
+// вид2 > не Возвращают, но принимает
 void Method2(string msg)
 {
     Console.WriteLine(msg);
@@ -60,7 +60,6 @@ int year = Method3();
 
 string Method4(int count, string text)
 {
-    ;
     string result = String.Empty;
     for(int i = 0; i < count; i++)
     {
