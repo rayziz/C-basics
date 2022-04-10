@@ -41,14 +41,9 @@ void Reverse(int[,] array)
 {
     for (int j = 0; j < array.GetLength(1); j++)
     {
-        int[] Temp1 = new int[array.GetLength(0)];
-        int[] Temp2 = new int[array.GetLength(0)];
-
-        Temp1[j] = array[0, j];
-        Temp2[j] = array[4, j];
-
-        array[0, j] = Temp2[j];
-        array[4, j] = Temp1[j];
+        int Temp1 = array[0, j];
+        array[0, j] = array[array.GetLength(0) - 1, j];
+        array[array.GetLength(0) - 1, j] = Temp1;
     }
 }
 
