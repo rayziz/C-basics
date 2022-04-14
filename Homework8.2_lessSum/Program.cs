@@ -1,10 +1,10 @@
 ﻿//Задача 2: Задайте прямоугольный двумерный массив.
 //Напишите программу, которая будет находить строку с наименьшей суммой элементов.
 
-int[,] array = FillArray(4, 5);
+int[,] array = FillArray(3, 2);
 PrintArray(array);
 Console.WriteLine();
-Sum(array);
+LessSum(array);
 
 
 
@@ -35,7 +35,7 @@ void PrintArray(int[,] array)
     }
 }
 
-void Sum(int[,] array)
+void LessSum(int[,] array)
 {
     int[] minStr = new int [array.GetLength(0)];
     for (int i = 0; i < array.GetLength(0); i++)
@@ -49,9 +49,9 @@ void Sum(int[,] array)
     }
     int lowSum = minStr[0];
     int lowStrInd = 0;
-    for (int i = 0; i < minStr.Length; i++)
+    for (int i = 1; i < minStr.Length; i++)
     {
-        if (minStr[0] < lowStrInd)
+        if (minStr[i] < lowSum)
         {
             lowSum = minStr[i];
             lowStrInd = i;
