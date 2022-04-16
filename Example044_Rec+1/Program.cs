@@ -12,7 +12,6 @@ void Plus1(int N)
     if (N == 0) return;
     Plus1(N-1);
     Console.Write(N + ", ");
-
 }
 
 int Prompt(string message)
@@ -22,4 +21,3 @@ int Prompt(string message)
     int Value = int.Parse(strValue);
     return Value;
 }
-
