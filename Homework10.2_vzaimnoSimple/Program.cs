@@ -91,16 +91,14 @@ int[] FillInfo(int[] array)
 
 int FindStartNumber(int[] info)
 {
-    int start = 0;
     for (int i = 0; i < info.Length; i++)
     {
         if (info[i] == 0)
         {
-            start = i;
-            return start;
+            return i;
         }
     }
-    return start;
+    return 0;
 }
 
 int[] ReplaceDouble(int[] newarray)
